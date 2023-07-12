@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style scoped>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #bead_div {
+            margin: auto;
+            background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.31df3a5a2d8462228734f95d459883e2?rik=7EE6TeWDk%2f%2bctQ&riu=http%3a%2f%2fwww.quazero.com%2fuploads%2fallimg%2f140303%2f1-140303214331.jpg&ehk=SpI7mz%2byLqOkT8BL79jcd3iCtQYNFlBHQzbtF1p0vuQ%3d&risl=&pid=ImgRaw&r=0');
+            background-size: 100%;
+
+        }
+        #slide_show{
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+            margin: auto;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <h1 style="text-align: center;">这是一个标题</h1>
+        <div id="bead_div" style="width: 400px; height: 200px; ">
+            </a>
+        </div>
+    </head>
+    <div id="slide_show">
+        <ul style="display: flex;width: 100%;height: 100%;">
+            <li>
+                <img id="imgMargin" style="background-color: aqua;margin-left: 10px;" width: 400px;src="https://tse1-mm.cn.bing.net/th/id/OIP-C.a_2XJOKnYxsnGU-tYazCWwHaF7?pid=ImgDet&rs=1" alt="">
+            </li>
+            <li>
+                <img style="background-color: aqua; width: 400px;" src="https://ts1.cn.mm.bing.net/th/id/R-C.df4462fabf18edd07195679a5f8a37e5?rik=FnNvr9jWWjHCVQ&riu=http%3a%2f%2fseopic.699pic.com%2fphoto%2f50059%2f8720.jpg_wh1200.jpg&ehk=ofb4q76uCls2S07aIlc8%2bab3H5zwrmj%2bhqiZ%2fyw3Ghw%3d&risl=&pid=ImgRaw&r=0" alt="">
+            </li>
+            <li>
+                <img style="background-color: aqua; width: 400px;" src="https://ts1.cn.mm.bing.net/th/id/R-C.eec02321ea106169d757f427b98b358d?rik=%2bgK43uKTPrZbCw&riu=http%3a%2f%2f00.minipic.eastday.com%2f20170823%2f20170823152907_d41d8cd98f00b204e9800998ecf8427e_4.jpeg&ehk=FsISayQ5Gjp%2boHXA8OW7nhrZdn2JEzUKk3lfW%2br0P70%3d&risl=&pid=ImgRaw&r=0" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script>
+    var btn = document.getElementById('bead_div');
+    var marginLeft = document.getElementById('imgMargin');
+
+    function on(){
+       for(i=0;i<100;i++){
+        return i
+       }
+        // console.log(marginLeft.style.marginLeft);
+    }
+   
+    // var slideShow = document.getElementById('slide_show');
+    // var slidUl = `<ul>`;
+    btn.onclick = function () {
+        console.log("页面点击");
+        // alert("'弹窗！")
+        // window.location.replace("http://www.quazero.com/a/youmeifengjing/1529_8.html")
+        console.log(on());
+    };
+
+</script>

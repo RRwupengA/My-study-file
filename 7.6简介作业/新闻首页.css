@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    padding: 20px;
+}
+p{
+    text-indent:2em;
+    line-height: 28px;
+}
+.beg_box{
+    width: 800px;
+    /* border: 1px solid black; */
+    margin: auto;
+    background-color: #F8F8F8;
+}
+.img_div{
+    width: 700px;margin: 20px auto;
+}

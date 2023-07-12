@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        a{
+            text-decoration: none;
+            /* background-color: rgb(27, 208, 151); */
+            padding:7px 5px;
+            color: white;
+        }
+        a:hover{
+            background-color: red;
+        }
+        .nav_box{
+            width: 100%;
+            padding: 10px auto;
+            /* border: 1px solid black; */
+        }
+        .nav_box_div{
+            /* border: 1px solid red; */
+            background-color: #147AD5;
+            width: 80%;
+            height: 60px;
+            margin: auto;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+
+            border-top: 100px solid black;
+            border-bottom: 100px solid red;
+            border-left: 100px solid pink;
+            border-right: 100px solid yellow;
+        }
+        .box-1{
+            margin: 100px auto;
+            width: 0px;
+            height: 0px;
+            background-color: lightblue;
+
+            border-top: 200px solid black;
+            border-bottom: 200px solid red;
+            border-left: 200px solid pink;
+            border-right: 200px solid yellow;
+        }
+        .box-2{
+            margin: 100px auto;
+            width: 100px;
+            height: 100px;
+            /* background-color: lightblue; */
+
+            border-top: 200px solid black;
+            border-bottom: 200px solid red;
+            border-left: 200px solid pink;
+            border-right: 200px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav_box">
+        <div class="nav_box_div">
+            <a href="">新闻</a>
+            <a href="">财经</a>
+            <a href="">娱乐</a>
+            <a href="">科技</a>
+            <a href="">体育</a>
+            <a href="">NBA</a>
+            <a href="">国际</a>
+        </div>
+    </nav>
+    <div style="width: 100%;margin-top: 300px;">
+    <div class="box"></div>
+    </div>
+    <div style="width: 100%;margin-top: 300px;">
+    <div class="box-1"></div>
+    </div>
+    <div style="width: 100%;margin-top: 300px;">
+    <div class="box-2">
+        <div style="width: 100px;height: 100px;background-color: rgb(41, 205, 20);"></div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_box {
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    position: fixed;
+
+    /* border: 1px solid red; */
+    /* line-height: 60px; */
+    .nav_box_black {
+        background-color: #FFFFFF;
+        width: 960px;
+        height: 40px;
+        margin: 10px auto;
+        display: flex;
+        /* border: 1px solid blue; */
+        justify-content: space-between;
+        align-items: center;
+        /* line-height: 40px; */
+    }
+
+    .nav_box_img {
+        height: 100%;
+        font-size: 0;
+    }
+
+    .nav_box_a {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 510px;
+        /* float: right; */
+    }
+
+    .nav_box_a a {
+        color: green;
+    }
+
+    .nav_box_a a:hover {
+        color: red;
+    }
+}
+
+.text_img {
+    width: 100%;
+
+}
+
+.text_img p {
+    width: 960px;
+    margin: 20px auto;
+    line-height: 150%;
+    color: gray;
+}
+
+.text_img p::before {
+    content: '“';
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.text_img p::after {
+    content: '”';
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.center_box {
+    width: 960px;
+    margin: 40px auto 0 auto;
+    /* border: 1px solid black; */
+
+
+}
+
+.center_box h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: purple;
+}
+
+.center_box h1::before {
+    content: '\258A';
+}
+
+.my_class {
+    width: 100%;
+    height: 520px;
+    background-image: url(http://jinxizhen.gitee.io/personal-homepage/images/classmates.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+
+    .my_class_img1 {
+        width: 260px;
+        height: 260px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .my_class_img2 {
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        bottom: 20px;
+        left: 300px;
+    }
+
+    .my_class_img3 {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+.my_class img {
+    border-radius: 50%;
+    overflow: hidden;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first>span {
+            color: red;
+        }
+        /* .blod{
+            font-weight: 700;
+        } */
+        /* .first p:nth-child(2){
+            color: red;
+        } */
+        .first p:nth-child(2n){
+            color: red;
+            font-weight: 700;
+        }
+        .first p:nth-child(2n+1){
+            color: blue;
+        }
+        .first p:nth-child(3n){
+            font-size: 20px;
+        }
+        .first p:nth-child(-n+3){
+            text-align: center;
+        }
+        .first p:nth-child(n+3){
+            text-align: end;
+        }
+            </style>
+</head>
+
+<body>
+    <div class="first">
+            <p class="blod">新闻内容</p>
+            <p class="blod">习近平赴苏州考察，为把握“首要任务”进一步指明方向</p>
+            <p>鉴往知来｜古城缩影平江，演绎诗画江南| 学习时节</p>
+            <p>（新华时评）弘扬伟大抗战精神 建功伟大时代</p>
+            <p>努力实现各国人民对美好生活的向往（和音）</p>
+            <p>南方早稻陆续收获 夏粮收储加紧进行</p>
+            <p>众志成城 争分夺秒</p>
+            <p>坚持道不变、志不改（思想纵横）</p>
+            <p>伊拉克各界人士期待在基建领域与中国深化合作</p>
+
+    </div>
+</body>
+
+</html>

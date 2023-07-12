@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        .box {
+            letter-spacing: 3px;
+            margin: 20px auto;
+        }
+
+        /* 选择标签中的第一行 */
+        .box::first-line {
+            color: red;
+            font-variant: small-caps;
+        }
+
+        /* 选择标签中的第一个字符 */
+        .box::first-letter {
+            font-weight: 700;
+            font-size: 30px;
+            color: aqua;
+        }
+        .box::after{
+            content: '“';
+            font-size: 20px;
+            color: yellow;
+        }
+        .box::before{
+            content: '”';
+            font-size: 30px;
+            color: yellow;
+        }
+        .box2{ 
+            position: relative;
+            margin: 20px auto;
+            line-height: 100px;
+            text-align: center;
+            width: 200px;height: 100px;background-color: aqua ;
+        }
+        .box2::after{
+            position: absolute;
+            right: -99px;
+            content: '';
+            width: 0;height: 0;
+            /* background-color: transparent; */
+            display: inline-block;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid #00FFFF;
+            border-left: 50px solid #00FFFF;
+            border-right: 50px solid transparent;
+        }
+        .box2::before{
+            position: absolute;
+        right:200px;
+            content: '';
+            width: 0;height: 0;
+            /* background-color: blue; */
+            display: inline-block;
+            border-top: 50px solid #00FFFF;
+            border-bottom: 50px solid transparent;
+            border-left: 50px solid transparent ;
+            border-right: 50px solid aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        我们公司专业开发APP、小程序、公众号，商城系统模式，15年互联网系统开发经验
+        1、分销系统
+        2、卷轴模式，蚁丛模式
+        3、泰山众筹系统
+        4、付费课程，直播系统
+        5、易货平台
+        6、打车系统
+        7、代驾系统
+        8、外卖系统
+        9、招聘系统
+        10、医疗平台
+        联系电话：15238334749
+        換裙请备注,不要pdd，福利，兼职
+    </div>
+    <div class="box2">
+        <em>这是文字</em>
+    </div>
+</body>
+
+</html>
