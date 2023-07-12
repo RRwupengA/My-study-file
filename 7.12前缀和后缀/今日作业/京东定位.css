@@ -1,0 +1,83 @@
+*{
+    padding: 0;margin: 0;list-style: none;
+}
+.box {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+
+    .box_img {
+        margin: 100px auto;
+        width: 400px;
+        height: 300px;
+        /* border: 1px solid red; */
+        background-image: url(https://img1.360buyimg.com/n6/jfs/t1/143192/28/32883/92628/64744354F02ff6c61/3b849cf299def3a2.jpg);
+        background-size: 100% 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .box_img span {
+        background-color: #1d151677;
+        width: 35px;
+        height: 29px;
+        border-radius: 19px;
+        text-align: center;
+        line-height: 29px;
+    }
+    .box_img span:hover{
+        background-color: aquamarine;
+        cursor: pointer;
+    }
+    .box_img span:nth-child(1) {
+
+        position: absolute;
+        top: calc(50% - 29px);
+        left: -13px;
+    }
+
+    .box_img span:nth-child(2) {
+
+        position: absolute;
+        top: calc(50% - 29px);
+        right: -13px;
+    }
+
+}
+.dian{
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+}
+.dian li{
+    width: 10px;
+    height: 10px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+.dian li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: 'iconfont';
+    /* Project id 4164169 */
+    src: url('//at.alicdn.com/t/c/font_4164169_5egcducqadi.woff2?t=1689160574668') format('woff2'),
+        url('//at.alicdn.com/t/c/font_4164169_5egcducqadi.woff?t=1689160574668') format('woff'),
+        url('//at.alicdn.com/t/c/font_4164169_5egcducqadi.ttf?t=1689160574668') format('truetype');
+}
+
+.iconfont {
+    color: white;
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
