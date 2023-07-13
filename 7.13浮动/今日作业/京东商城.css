@@ -1,0 +1,128 @@
+/* 1210    290      271 */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.w {
+    width: 1200px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.box_ul {
+    width: 100%;
+    height: 100%;
+}
+
+.box_ul li {
+    width: 290px;
+    height: 419px;
+    border: 1px solid black;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.div_img {
+    width: 290px;
+    height: 320px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.div_img_box {
+    width: 230px;
+    height: 230px;
+    padding: 15px 30px 0 30px;
+}
+
+.div_img_box h4 {
+    height: 20px;
+    overflow: hidden;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 400;
+    /* border: 1px solid black; */
+    margin: 20px 10px 9px -13px;
+}
+
+.div_img_box p {
+    height: 21px;
+    /* border: 1px solid black; */
+    color: rgb(224, 18, 34);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: -13px;
+}
+
+.div_footer {
+    width: 290px;
+    height: 99px;
+    /* border: 1px solid black; */
+}
+
+.div_footer_box {
+    width: 271px;
+    height: 41px;
+    float: right;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+
+}
+
+.div_footer_box1 span:nth-child(2) {
+    font-size: 24px;
+    font-family: arial;
+    margin-right: 2px;
+    color: #e01222;
+}
+
+.div_footer_box2 {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-family: 400;
+    display: inline-block;
+}
+
+.gang {
+    width: 88px;
+    height: 8px;
+    background: #b8b8b8;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+
+.gan {
+    width: 30px;
+    height: 8px;
+    background: #ff0303;
+    display: inline-block;
+    position: absolute;
+    /* margin-left: 5px; */
+    /* border-radius: 8px; */
+}
+
+.qiang {
+    width: 80px;
+    height: 40px;
+    background-color: #DF0021;
+    color: #fff;
+    line-height: 40px;
+    float: right;
+    text-align: center;
+}
