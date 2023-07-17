@@ -1,0 +1,220 @@
+*{
+    margin: 0;padding: 0;list-style: none;
+}
+.w{
+    width: 850px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.clearfix{
+    /* width: 100%; */
+    float: right;height: 32px;
+    line-height: 32px;
+}
+.fix-left{
+    width: 431px;
+    
+    margin-right: 39px;
+    float: right;
+}
+.fix-left a{
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+.fix-left li:nth-child(2) a{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+.fix-right{
+    float: right;
+}
+.fix-right a{
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+}
+.clear-right-ul{
+    position: relative;
+}
+.clear-right-ul li{
+    float: right;
+    margin: 0 11px;
+}
+.clear-right-ul li:nth-child(1){
+    padding-right: 10px;
+}
+.clear-right-ul li:nth-child(1):hover .right-none{
+    display: block;
+}
+.fix-left li{
+    width: 26px;
+    /* height: 32px; */
+    line-height: 32px;
+    font-size: 13px;
+    float: left;
+    margin-left: 21px;
+}
+.right-none{
+    display: none;
+    width: 70px;
+    height: 52px;
+    border: 1px solid rgba(139, 138, 138, 0.537);
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    font-size: 12px;
+}
+.right-none p{
+    width: 70px;
+    /* text-align: center; */
+}
+.right-none p:hover{
+    background-color: #3388FF;
+}
+.right-none a:hover{
+    color: white;
+}
+.right-none a{
+    width: 53px;
+    height: 25px;
+    padding: 1px 6px 0 11px;
+    display: block;
+    color: rgb(51, 51, 51);
+    line-height: 25px;
+    text-decoration: none;
+}
+.hear{
+    padding-top: 31px;
+}
+.hear-left{
+    width: 135px;float: left;
+    margin-right: 25px;
+}
+.hear-right{
+    height: 53px;
+    line-height: 53px;
+}
+.hear-right input{
+    width: 540px;
+    height: 36px;
+}
+.hear-right span{
+    background-color: rgb(51, 136, 255);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    width: 104px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: -7px;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(1, 32, 79);
+    margin-top: 15px;
+}
+.nav-content{
+    margin: auto;
+    width: 984px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    position: relative;
+}
+.nav-content li{
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+.nav-content li:nth-child(1){
+    background-color: rgb(204, 0, 0);
+}
+.animation-shadow{
+    position: absolute;
+    /* 背景跟随 */
+    height: 100%;
+    top: 0;
+    /* 顶部线条跟随 */
+    /* height: 10%;
+    top: 0; */
+    /* 底部线条跟随 */
+    /* height: 10%;
+    bottom: 0;  */
+    z-index: 0;
+    background-color: rgb(204, 0, 0);
+    transition: all .5s ease 0s;
+    /* width: 48px; */
+}
+.nav-content li:hover{
+    cursor: pointer;
+}
+.nav-content li:nth-child(1):hover ~ .animation-shadow{
+    width: 48px;
+    left: 0;
+}
+.nav-content li:nth-child(2):hover ~ .animation-shadow
+{
+    width: 48px;
+    left: 48px;
+}
+
+.nav-content li:nth-child(3):hover ~ .animation-shadow{
+    width: 48px;
+    left: 96px;
+}
+
+.nav-content li:nth-child(4):hover ~ .animation-shadow
+{
+    width: 48px;
+    left: 144px;
+}
+
+.nav-content li:nth-child(5):hover ~ .animation-shadow{
+    width: 48px;
+    left: 192px;
+}        
+.nav-content li:nth-child(6):hover ~ .animation-shadow{
+    width: 48px;
+    left: 240px;
+}        
+.nav-content li:nth-child(7):hover ~ .animation-shadow{
+    width: 48px;
+    left: 288px;
+}        
+.nav-content li:nth-child(8):hover ~ .animation-shadow{
+    width: 62px;
+    left: 336px;
+}        
+.nav-content li:nth-child(9):hover ~ .animation-shadow{
+    width: 48px;
+    left: 398px;
+}        
+.nav-content li:nth-child(10):hover ~ .animation-shadow{
+    width: 48px;
+    left: 446px;
+}        
+.nav-content li:nth-child(11):hover ~ .animation-shadow{
+    width: 48px;
+    left: 494px;
+}        
+.nav-content li:nth-child(12):hover ~ .animation-shadow{
+    width: 48px;
+    left: 542px;
+}        
+.nav-content li:nth-child(13):hover ~ .animation-shadow{
+    width: 48px;
+    left: 590px;
+}        

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background: #2c3e50; */
+    background: #7bbdff;
+}
+nav{
+    position: relative;
+    margin: 270px auto 0;
+    width: 580px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
+}
+nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    /* 文字阴影 */
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+}
+nav a:nth-child(3){
+    width:135px;
+}
+nav a:nth-child(4){
+    width:115px;
+}
+nav .animation,nav .animation-shadow{
+    position: absolute;
+    /* 背景跟随 */
+    height: 100%;
+    top: 0;
+    /* 顶部线条跟随 */
+    /* height: 10%;
+    top: 0; */
+    /* 底部线条跟随 */
+    /* height: 10%;
+    bottom: 0;  */
+    z-index: 0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+nav .animation-shadow{
+    background: rgba(26, 188, 156, .4);
+}
+nav a:nth-child(1).active ~ .animation,
+nav a:nth-child(1).active ~ .animation-shadow,
+nav a:nth-child(1):hover ~ .animation-shadow{
+    width: 110px;
+    left: 0;
+}
+nav a:nth-child(2).active ~ .animation,
+nav a:nth-child(2).active ~ .animation-shadow,
+nav a:nth-child(2):hover ~ .animation-shadow
+{
+    width: 110px;
+    left: 110px;
+}
+
+nav a:nth-child(3).active ~ .animation,
+nav a:nth-child(3).active ~ .animation-shadow,
+nav a:nth-child(3):hover ~ .animation-shadow{
+    width: 135px;
+    left: 220px;
+}
+
+nav a:nth-child(4).active ~ .animation,
+nav a:nth-child(4).active ~ .animation-shadow,
+nav a:nth-child(4):hover ~ .animation-shadow
+{
+    width: 115px;
+    left: 355px;
+}
+
+nav a:nth-child(5).active ~ .animation,
+nav a:nth-child(5).active ~ .animation-shadow,
+nav a:nth-child(5):hover ~ .animation-shadow{
+    width: 110px;
+    left: 470px;
+}        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">主页</a>
+        <a href="#">博客</a>
+        <a href="#">随笔手记</a>
+        <a href="#">关于此</a>
+        <a href="#">联系</a>
+        <div class="animation"></div>
+        <div class="animation-shadow"></div>
+    </nav>
+    
+</body>
+</html>
