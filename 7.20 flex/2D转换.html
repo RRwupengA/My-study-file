@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box{
+            width: 200px;height: 200px;
+            background-color: lightblue;
+            margin: 30px;
+        }
+        .box .inner{
+            width: 100px;height: 100px;
+            background-color: red;
+            text-align: center;                                                                                                                                                                                                                                                                                                                              
+            line-height: 100px;
+           
+           
+            transition: all 1s;
+        }
+        .box:hover .inner{
+            /* 平移 translate(x,y) */
+            /* 缩放 scale(x,y) */
+            /* 旋转 rotateX,Y(deg) */
+            /* 倾斜 skew(+-deg) */
+            /*  */
+            transform: translate(30px,50px) scale(1.5) rotate(30deg) skew(45deg);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner">
+            动画效果
+        </div>
+    </div>
+</body>
+</html>

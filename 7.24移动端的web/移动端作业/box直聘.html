@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+        <title>Document</title>
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			ul {
+				list-style: none;
+			}
+			header {
+				height: 100px;
+				background-color: #35b9b3;
+				color: #fff;
+				padding: 15px;
+			}
+			header .top {
+				background-color: red;
+				display: flex;
+				justify-content: space-between;
+			}
+			.hot-job {
+				background-color: lightblue;
+				padding: 0 20px;
+			}
+			.hot-job .item-list {
+				/* width: 100%; */
+				width: calc(100vw - 20px * 2);
+				background-color: red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+			}
+			.hot-job .item {
+				width: calc((100% - 10px * 2) / 3);
+				height: 36px;
+				padding: 7px 14px;
+				font-size: 14px;
+				border: 1px solid;
+				background-color: blue;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="top">
+				<div class="logo">BOSS直聘</div>
+				<div class="login">登录</div>
+			</div>
+			<div class="bottom">
+				<input type="text" />
+			</div>
+		</header>
+		<main>
+			<div class="hot-job">
+				<ul class="item-list">
+					<li class="item">选项1</li>
+          <li class="item">选项2</li>
+          <li class="item">选项3</li>
+          <li class="item">选项4</li>
+          <li class="item">选项5</li>
+          <li class="item">选项6</li>
+          <li class="item">选项7</li>
+          <li class="item">选项8</li>
+          <li class="item">选项9</li>
+				</ul>
+			</div>
+		</main>
+	</body>
+</html>

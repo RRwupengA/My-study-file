@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- content="width=device-width 自动获取屏幕宽度 -->
+    <!-- 视口设置：移动端网页必须写
+        width=device-width,use-scalable=no,inital-scale=1,maximum-scale=1,minimum-scale=1 这些值可以认为是固定用法
+        类似于 viewport-fit=cover(苹果刘海屏 全面屏适配)
+    -->
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- B站的写法 -->
+  <meta name="viewport" content="width=device-width ,use-scalable=no ,inital-scale=1 ,minimum-scale=1,viewport">
+
+  <!-- 京东的写法 -->
+  <meta name="viewport" content="width=device-width ,inital-scale=1.0 ,minimum-scale=1.0,use-scalable=0">
+
+    <title>Document</title>
+    <style>           
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        header{
+            height: 100px;
+            line-height: 50px;
+            background-color: aqua;
+            text-align: center;
+            padding: 15px;
+        } 
+        header .top{
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+        }
+        .hot-job{
+            background-color: lightblue;
+            padding: 0 20px;
+        }
+        .hot-job .item-list{
+            width: calc(100vw - 20px *2);
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .hot-job .item-list
+        .box{
+            /* 
+                vw 视口宽度，把视口宽度分成100份的vw，1vw的宽度就是视口宽度的1%
+                以iphone6为例：视口宽度
+            */
+            width: 26.666667vw;
+            height: 97px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">BOSS直聘</div>
+            <div class="login">登录</div>
+        </div>
+        <div class="bottom">
+            <div class="logo">BOSS直聘</div>
+            <div class="login">登录</div>
+        </div>
+        <div class="hot-jop">
+          
+        </div>
+    </header>
+</body>
+</html>

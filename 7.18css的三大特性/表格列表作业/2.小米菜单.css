@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.box{
+    width: 234px;
+    height: 460px;
+    padding: 20px 0;
+    margin: 100px auto;
+}
+.box-ul{
+    width: 100%;
+}
+.box-ul-li{
+    height: 42px;
+    line-height: 42px;
+    background-color: rgba(105, 101, 101, 0.6);
+}
+.box-ul-li:hover{
+    background-color: rgb(255, 103, 0);
+}
+.box-ul-li a{
+    /* width: 100%; */
+    padding-left: 30px;
+    display: block; 
+    position: relative;
+}
+.box-ul-li span{
+    position: absolute;
+    right: 20px;
+}

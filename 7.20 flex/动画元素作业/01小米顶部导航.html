@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./01小米顶部导航.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4164169_a43gimleip4.css">
+</head>
+
+<body>
+    <nav class="nav-top">
+        <div class="box w">
+            <div class="shopping">
+                <span><i class="iconfont icon-gouwuche"></i> 购物车 (0)</span>
+                <span class="none-span">
+                    购物车中还没有商品，赶紧选购吧！
+                </span>
+                <!-- <span class="index">
+                    <span><i class="iconfont icon-gouwuche"></i> 购物车 (0)</span>
+                </span> -->
+            </div>
+        </div>
+    </nav>
+    <div class="input-div-top">
+        <div class="input-div">
+            <input type="text" class="inp" placeholder="耳机">
+            <span class="iconfont icon-sousuo1"></span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    // var yon = document.getElementsByClassName('index')[0];
+    var shopping = document.getElementsByClassName('shopping')[0];
+    // var tip = document.getElementsByClassName("none-span")[0];
+    // var width = '';
+    // var timeoutId;
+    // function carout() {
+    //     tip.style.height = "100px";
+    //     shopping.style.backgroundColor = "#FFFFFF";
+    //     shopping.style.color = "#ff6700";
+    //     console.log("鼠标移入");
+
+        
+    //     timeoutId = setTimeout(function () {
+    //         width = tip.clientWidth || tip.offsetWidth;
+    //         console.log(width);
+    //     }, 300);
+       
+    // }
+
+    function carover() {
+        shopping.style.transitionDelay = ".2s";
+    }
+    shopping.onmouseout = function () {
+        carover()
+        console.log('鼠标移出');
+    }
+
+    // transition: width 2s, height 2s, transform 2s;
+</script>

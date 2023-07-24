@@ -1,0 +1,1387 @@
+
+
+/* 公共样式 */
+
+*{
+    margin: 0;padding: 0;list-style: none;    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    outline-width: 0;
+    color: inherit;
+  }
+  img{
+    border: 0;
+  }
+  em, b, i, code, strong {
+    font-style: normal;
+}
+  .clear::after,.clear::before{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+  }
+.w{
+    width: 1200px;margin: auto;
+    /* border: 1px solid black; */
+}
+
+
+/* 字体图标 */
+
+@font-face {
+    font-family: "iconfont"; /* Project id 4178416 */
+    src: url('//at.alicdn.com/t/c/font_4178416_qivt8cvbve.woff2?t=1689946657387') format('woff2'),
+         url('//at.alicdn.com/t/c/font_4178416_qivt8cvbve.woff?t=1689946657387') format('woff'),
+         url('//at.alicdn.com/t/c/font_4178416_qivt8cvbve.ttf?t=1689946657387') format('truetype');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-erweima:before {
+    content: "\eaf1";
+  }
+  
+  /*顶部导航  */
+
+.nav-top{
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    background-color: #f7f9fa;
+    box-shadow: 0 1px 0 0 #E8EDF2;
+    font-size: 12px;
+}
+.center-nav{
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.nav-left{
+    padding: 0 26px;
+}
+.nav-left a:nth-of-type(1) {
+    padding: 0 16px 0 22px;
+    border-right: 1px solid black;
+}
+.nav-left a:nth-of-type(2) {
+    display: inline-block;
+    margin: 0 16px;
+    width: 68px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    background: #1971EF;
+    text-align: center;
+}
+.nav-right a{
+    display: inline-block;
+    height: 100%;
+    padding: 0 12px;
+    color: rgb(38, 38, 38);
+    position: relative;
+}
+.nav-right a::after{
+    content: '';
+    position: absolute;
+    width: 1px;height: 14px;
+    background-color: #e0e6ed;
+    right: -1px;
+    top: 13px;
+}
+
+.nav-right a:hover{
+    background-color: white;
+}
+
+.nav-right a:nth-of-type(1):hover .myplant{
+display: block;
+}
+.nav-right a:nth-of-type(2):hover .service{
+display: block;
+}
+.nav-right a:nth-of-type(3):hover .move{
+display: block;
+}
+
+.erwm{
+    width:30px;
+    display: inline-block;
+    height: 100%;
+    font-size: 27px;
+    position: absolute
+}
+
+.myplant{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 160px;height: 240px;
+    padding: 20px 0 20px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    /* border: 1px solid black; */
+    font-size: 13px;
+    cursor:auto;
+    display: none;
+}
+.service{
+    position: absolute;
+    left: -90px;
+    top: 40px;
+    width: 230px;
+    padding: 20px 0 20px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    /* border: 1px solid black; */
+    font-size: 13px;
+    cursor:auto;
+    display: none;
+}
+.move{
+    position: absolute;
+    left: -430px;
+    top: 40px;
+    width: 480px;
+    padding: 25px 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    /* border: 1px solid black; */
+    font-size: 13px;
+    cursor:auto;
+    display: none;
+}
+.move-ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.move-ul img{
+    width: 130px;
+    height: 130px;
+}
+.move-ul p{
+    width: 130px;
+    height: 21px;
+    line-height: 21px;
+    margin: 16px 0 4px 0;
+    color: rgb(38, 38, 38);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.myplant p,.service p{
+    margin-bottom: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: black;
+}
+.myplant-ul2 li,.service-ul2 li{
+    /* border-right: 1px solid #262626dd; */
+    float: left;
+    color: #262626;
+    /* padding-left:10px; */
+    padding-right: 25px;
+    margin-left: -1px;
+    margin-bottom: 12px;
+    line-height: 18px;
+}
+
+/* 侧边导航 */
+
+.sidebar{
+width: 35px;
+height:100vh;
+position: fixed;
+top: 0;
+right: 0;
+display: -webkit-flex;
+-webkit-flex-direction: column;
+/* justify-content: space-between; */
+/* border: 1px solid black; */
+background-color: #383838;
+z-index: 2;
+}
+.sideber-top{
+    height: 357px;
+    width: 100%;
+    /* background-color: #1971EF; */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    margin-top: 170px;
+}
+
+.sn-sidebar-tabs{
+background-color: #383838;
+}
+.content-text{
+   text-align: center;
+   margin: 4px 0;
+}
+.content-text:hover{
+   background-color: #FFAA01;
+}
+.content-text p{
+    writing-mode: vertical-rl;
+    line-height: 35px;
+    letter-spacing: 5px;
+}
+.sn-sidebar-tabs .content-text:nth-of-type(2){
+    border-top: 1px solid #4d4d4d;border-bottom: 1px solid #4d4d4d;
+    font-size: 12px;color: white;
+    padding: 13px 0;box-sizing: border-box;
+}
+
+.content-text-span1{
+    display: inline-block;
+    background: url('./img/sidebaricon.png') no-repeat -10px -7px;
+	width: 16px;
+	height: 16px;
+    margin: 8px 0;
+}
+.content-text-span2{
+    display: inline-block;
+    background: url('./img/sidebaricon.png') no-repeat -7px -217px;
+	width: 16px;
+	height: 16px;
+    margin: 6px 0;
+}
+.content-text-span3{
+    display: inline-block;
+	width: 16px;
+	height: 16px;
+    margin: 7px 0;
+    /* background: url('./img/sidebaricon.png') no-repeat -10px -31px; */
+}
+.span3-none{
+    display: inline-block;
+    width: 35px;
+    height: 34px;
+    background-color: #FFAA01;
+    font-size: 12px;
+    color: black;
+    position: absolute;
+    line-height: 34px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+    overflow: hidden;
+}
+.div3-none{
+    width: 0px;height: 249px;position: absolute;top: -210px;
+    right: 35px;z-index: -2;
+    transition: all .1s;
+}
+.red{
+    width: 16px;
+	height: 16px;
+    background-color: red;
+    padding: 0 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.sn-sidebar-tabs .content-text:nth-of-type(3){
+    position: relative;
+ }
+ .sn-sidebar-tabs .content-text:nth-of-type(3):hover .span3-none{
+     width: 50px;
+     left: -50px;
+ }
+
+.sn-sidebar-tabs-top{
+background-color: #383838;
+margin-top: 38px;
+}
+.sn-sidebar-tabs-top .content-text{
+    position: relative;
+ }
+ .sn-sidebar-tabs-top .content-text:hover .span3-none{
+    width: 70px;
+     left: -70px;
+ }
+ .sn-sidebar-tabs-top .content-text:hover .div3-none{
+    width: 158px;
+     /* left: -50px; */
+ }
+ .content-text-span3:hover .img{
+    width: 134px;
+     /* left: -50px; */
+ }
+ .jio{
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #DA3142;
+    border-style: solid;
+    /* 将底边框的宽度设置为0 */
+    border-width: 17px 0 17px 7px;
+    transition: all .1s;
+    display: none;
+ }
+ .content-text:hover .jio{
+    display: block;
+ }
+ .float-bottom{
+    margin-top: 335px;
+ }
+/* .head{
+    width: 100%;
+    height:990px;
+    background-image: url(./img/微信图片_20230722171622.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+} */
+
+/* 内容-顶部输入框 */
+
+.head{
+    padding-top: 24px;
+}
+.logo{
+    float: left;
+    margin-top: 7px;
+}
+.headR-form form {
+    border: 2px solid #2769DC;
+    width: 600px;
+    height: 40px;
+    position: relative;
+}
+.headR-form{
+    float: left;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.v-select{
+    width: 92px;
+    text-indent: 16px;
+    font-size: 14px;
+    color: #262626;
+    line-height: 36px;
+    height: 36px;
+    border-right: 1px solid #E8EDF2;
+    position: relative;
+}
+.select-panel{
+    background: url(//static.gcimg.net//gongchang2022/2022/0925/xiazzz.png) no-repeat 56px center;
+}
+.select-menu {
+    background: #fff;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 38px;
+    width: 91px;
+    padding: 10px 0;
+    line-height: 32px;
+}
+.select-menu li{
+    cursor: pointer;
+}
+.headR-form form input {
+    width: 387px;
+    height: 36px;
+    border: 0;
+    outline: 0;
+    text-indent: 18px;
+}
+.headR-form form button {
+    width: 116px;
+    height: 36px;
+    background: #2769DC;
+    color: #fff;
+    font-size: 16px;
+}
+.fr {
+    float: right;
+}
+.fl{
+    float: left;
+}
+.hot-sea {
+    position: absolute;
+    left: 342px;
+    top: 8px;
+    font-size: 0;
+}
+.hot-sea a {
+    display: inline-block;
+    background: #F1F4F7;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: #262626;
+    margin-left: 6px;
+}
+
+.headR-ewm{
+    float: right;
+    text-align: center;
+    width: 80px;
+    margin-left: 20px;
+}
+.headR-ewm form{
+    border: 2px solid #2769DC;
+    width: 600px;
+    height: 40px;
+    position: relative;
+}
+.headR-img img {
+    width: 64px;
+    height: 64px;
+}
+.headR-bt {
+    margin-top: 9px;
+}
+.head-ots {
+    margin-top: 4px;
+    border-bottom: 1px solid #2769DC;
+}
+.ots-title {
+    width: 220px;
+    height: 40px;
+    background: #2769DC;
+    border-radius: 2px 2px 0 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #fff;
+    float: left;
+}
+.ots-nav {
+    float: left;
+}
+.ots-nav a{
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    color: #262626;
+    margin-left: 48px;
+    font-weight: 700;
+}
+.ots-nav a:hover {
+    color: #2769DC;
+}
+
+/* 内容轮播图 */
+
+.index-banner {
+    width: 100%;
+    height: 380px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0922/weitu.jpg) no-repeat center top;
+}
+
+.indexBan-left {
+    width: 220px;
+    height: 380px;
+    float: left;
+    background: #fff;
+    position: relative;
+}
+.ban-nav {
+    padding-top: 8px;
+}
+.banNav-item {
+    padding: 8px 20px;
+}
+.banNav-item .bt01 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt01.png) no-repeat 0 center;
+}
+.banNav-item .bt02 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt02.png) no-repeat 0 center;
+}
+.banNav-item .bt03 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt03.png) no-repeat 0 center;
+}
+.banNav-item .bt04 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt04.png) no-repeat 0 center;
+}
+.banNav-item .bt05 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt05.png) no-repeat 0 center;
+}
+.banNav-item .bt06 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt06.png) no-repeat 0 center;
+}
+.banNav-item .bt07 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt07.png) no-repeat 0 center;
+}
+.banNav-item .bt08 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt08.png) no-repeat 0 center;
+}
+.banNav-item .bt09 {
+    background: url(http://static.gcimg.net//gongchang2022/2022/0923/bt09.png) no-repeat 0 center;
+} 
+.banNav-bt {
+    font-size: 0;
+    padding-left: 25px;
+}
+.banEt-left {
+    width: 540px;
+    float: left;
+    margin-left: 20px;
+}
+.banNav-bt a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #262626;
+    display: inline-block;
+    margin: 0 4px;
+    font-weight: 700;
+}
+.banNav-item:hover .banNav-et{
+    display: block;
+}
+.banNav-et {
+    position: absolute;
+    width: 760px;
+    background: #FFF;
+    box-shadow: 0 4px 10px -4px rgba(38,38,38,.3);
+    border: 1px solid #2769DC;
+    z-index: 12;
+    top: 0;
+    left: 220px;
+    display: none;
+    padding-bottom: 20px;
+    overflow: hidden;
+    padding-left: 25px;
+}
+.banEt-box {
+    margin-top: 24px;
+}
+.banEt-box a:hover{
+    color: #2769DC;
+}
+.banNav-bt a:hover{
+    color: #2769DC;
+}
+.banEt-tle {
+    font-size: 16px;
+    line-height: 28px;
+    color: #2769DC;
+    font-weight: 700;
+}
+.banEt-tex {
+    font-size: 0;
+    max-height: 52px;
+    overflow: hidden;
+}
+.banEt-tex a {
+    font-size: 13px;
+    color: #595959;
+    line-height: 18px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.indexBan-item {
+    width: 760px;
+    height: 380px;
+    float: left;
+    background: #fff;
+    position: relative;
+}
+.swiper{
+    display: flex;
+    overflow: hidden;
+}
+.swiper-slide-prev{
+    transform: translate3d(0px, 0px, 0px);
+    /* animation: car infinite 6s; */
+    /* z-index: 1; */
+}
+@keyframes car{
+    100%{transform: translate3d(-1520px, 0px, 0px);}
+}
+/* -1520
+760 */
+.spg {
+    width: 736px;
+    height: 90px;
+    background: #FFF;
+    border-radius: 2px 2px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+}
+.spg-box {
+    width: 16.6%;
+    float: left;
+    text-align: center;
+}
+.spg-box .kx1{
+    background: url(//static.gcimg.net//gongchang2022/2022/0923/ga1.png) no-repeat center;
+}
+.spg-img {
+    width: 36px;
+    height: 36px;
+    margin: 12px auto 6px;
+}
+.spg-tit {
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+.spg-tit:hover{
+    color: #1971EF;
+}
+.indexBan-right {
+    width: 218px;
+    height: 380px;
+    float: left;
+    background: #fff url(//static.gcimg.net//gongchang2022/2022/0923/ycbg.png) no-repeat center;
+}
+.login {
+    padding: 0 26px;
+}
+.no-login {
+    font-size: 14px;
+    line-height: 22px;
+    overflow: hidden;
+    margin-top: 21px;
+    color: #262626;
+}
+.no-login span {
+    float: left;
+    margin-right: 8px;
+}
+.no-login img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.no-login em {
+    display: block;
+    font-size: 12px;
+}
+.login-go {
+    padding-top: 6px;
+}
+.login-go a {
+    display: block;
+    width: 180px;
+    /* height: 32px; */
+    background: #2769DC;
+    border-radius: 2px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+}
+.login-go .bts2 {
+    background: #fff;
+    color: #2769DC;
+    border: 1px solid #2769DC;
+}
+.login-em {
+    font-size: 0;
+    text-align: center;
+    margin-top: 16px;
+}.login-em a {
+    display: inline-block;
+    font-size: 12px;
+    color: #262626;
+}
+.login-em a:hover{
+    color: #2769DC;
+}
+.login-em em {
+    font-size: 12px;
+    color: #E0E6ED;
+    display: inline-block;
+    margin: 0 8px;
+}.login-xb {
+    margin-top: 16px;
+    /* text-align: center; */
+}.login-gt {
+    padding-top: 12px;    
+    /* padding: 0 26px; */
+}.login-gt p{
+    font-size: 12px;
+    line-height: 16px;
+    color: #262626;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 4px;
+}.login-gt p span {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background: #262626;
+    margin-right: 4px;
+    position: relative;
+    top: -3px;
+}
+.login-gt a:hover{
+    color: #2769DC;;
+}.login-bbt {
+    border-top: 1px solid #E0E6ED;
+    margin-top: 12px;
+    padding: 16px 26px 0;
+}.login-bbt span {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}.login-bbt a{
+    color: red;
+    font-size: 14px;
+}.index-bank {
+    width: 100%;
+    height: 810px;
+    padding: 1px 0;
+    background: #F3F5F9 url(//static.gcimg.net//gongchang2022/2022/0923/bj2.jpg) no-repeat center bottom;
+}
+.layout {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}.inBank-tes {
+    background: #FFF;
+    box-shadow: 0 4px 10px -4px rgba(38,38,38,.06);
+    border-radius: 2px;
+    height: 248px;
+    width: 100%;
+    margin-top: 23px;
+}.big-bak {
+    float: left;
+    height: 248px;
+    width: 220px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0923/ggbg.png) no-repeat center;
+}.bak-tle {
+    text-align: center;
+    font-size: 28px;
+    line-height: 34px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 36px;
+}.bak-tle span {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255,255,255,.6);
+    font-weight: 400;
+}.bak-ico {
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(255,255,255,.4);
+    margin: 58px auto 0;
+    border-radius: 50%;
+    background: url(//static.gcimg.net//gongchang2022/2022/0923/jb.png) no-repeat center;
+}.big-bke {
+    float: left;
+    width: 746px;
+    margin-left: 4px;
+}.bigBk-box {
+    width: 229px;
+    float: left;
+    margin-top: 16px;
+    margin-left: 12px;
+}
+.bigBk-box:hover img{
+    transform: scale(1.05);
+}
+.bigBk-box:hover a{
+    color: #2769DC;
+}
+.bigBk-img {
+    position: relative;
+    overflow: hidden;
+    width: 229px;
+    height: 164px;
+}.bigBk-img img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: .3s;
+}.bigBk-img span {
+    width: 16px;
+    height: 16px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0923/bz.png) no-repeat center;
+    position: absolute;
+    left: 12px;
+    top: 0;
+}.bigBk-info {
+    margin-top: 12px;
+}.bigBk-tit {
+    font-size: 14px;
+    line-height: 24px;
+    color: #262626;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}.bigBk-tah {
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+}.big-kbe {
+    float: left;
+    width: 220px;
+    padding-top: 8px;
+}.big-kbe p {
+    font-size: 12px;
+    line-height: 24px;
+    color: #262626;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+    text-indent: 20px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0923/wx.png) no-repeat 0 6px;
+}
+.big-kbe p:hover {
+    color: #2769DC;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/act.png) no-repeat 0 6px;
+}.hyb span {
+    display: inline-block;
+    margin: 0 24px;
+    position: relative;
+    top: 3px;
+}.hyb-main {
+    width: 100%;
+    height: 414px;
+    margin-top: 22px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0923/wtbg.png) no-repeat center;
+}.hyb-sm {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+    padding-top: 26px;
+}.hyb-cont {
+    margin-top: 30px;
+    margin-left: 12px;
+}.hyb-box {
+    float: left;
+    width: 279px;
+    text-align: center;
+    display: block;
+    margin-left: 12px;
+}.hyb-tit {
+    font-size: 14px;
+    line-height: 26px;
+    color: #262626;
+}.hyb-img {
+    margin-top: 16px;
+    overflow: hidden;
+}.hyb-img img {
+    width: 279px;
+    height: 200px;
+    transition: .3s;
+}
+.hyb-imagee {
+    margin-top: -78px;
+    z-index: 8;
+    position: relative;
+}.hyb-imagee img {
+    width: 160px;
+    height: 120px;
+}.index-bp {
+    width: 100%;
+    height: 454px;
+    padding-top: 1px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/clbbb.jpg) no-repeat center top;
+}
+.layout{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hyb{
+    color: #fff;
+    margin-top: 40px;font-weight: 700; font-size: 24px;    line-height: 34px;   text-align: center;
+}.hyb span {
+    display: inline-block;
+    margin: 0 24px;
+    position: relative;
+    top: 3px;
+}.bp-main {
+    margin-top: 25px;
+}.bp-nav {
+    padding-left: 292px;
+    position: relative;
+}.bp-nav .active {
+    font-weight: 700;
+}.bpNav {
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    color: #DDD;
+    margin-left: 60px;
+    position: relative;
+}.bpNav:hover {
+    font-weight: 700;
+}
+.bpNav a {
+    display: block;
+    padding: 15px 0;
+}.bp-nav .active span {
+    display: block;
+}
+.bpNav span {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+.bpNav:hover span{
+    display: block;
+}
+.bpNav-post {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+}
+.bp-cont {
+    width: 1280px;
+    height: 340px;
+    margin-left: -40px;
+    z-index: 9;
+    position: relative;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/huzi.png) no-repeat center;
+}
+.bp-logo {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.bp-logo img {
+    width: 200px;
+}
+.bpCo-left {
+    float: left;
+    width: 248px;
+    margin-top: 120px;
+    margin-left: 80px;
+}.bpCo-tle {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #262626;
+}.bpCo-line {
+    width: 67px;
+    height: 3px;
+    background: #262626;
+    margin-top: 12px;
+}.bpCo-intro {
+    font-size: 14px;
+    line-height: 24px;
+    color: #262626;
+    margin-top: 20px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.bpCo-right {
+    width: 824px;
+    float: left;
+    margin-left: 51px;
+    margin-top: 40px;
+    position: relative;
+}.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}.bpCo-box{
+    width: 197px;
+    margin-right: 12px;
+    overflow: hidden;
+    background-color: #262626;
+}.bpCo-box img {
+    width: 100%;
+    transition: .3s;
+}
+.bpCo-box img:hover{
+    transform: scale(1.08);
+}.bpCo-right .swiper-button-next {
+    width: 16px;
+    height: 40px;
+    background: rgba(39,105,220,.3) url(//static.gcimg.net//gongchang2022/2022/0926/angle-right1.png) no-repeat center;
+    border-radius: 2px;
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    cursor: pointer;
+}.bpCo-right .swiper-button-next:hover {
+    background: rgba(39,105,220,1) url(//static.gcimg.net//gongchang2022/2022/0926/angle-right1.png) no-repeat center;
+}.bpCo-right .swiper-button-prev {
+    width: 16px;
+    height: 40px;
+    background: rgba(39,105,220,.3) url(//static.gcimg.net//gongchang2022/2022/0926/angle-left.png) no-repeat center;
+    border-radius: 2px;
+    position: absolute;
+    left: -24px; top: 50%;
+    cursor: pointer;
+}.bpCo-right .swiper-button-prev:hover {
+    background: rgba(39,105,220,1) url(//static.gcimg.net//gongchang2022/2022/0926/angle-left.png) no-repeat center;
+}.index-product {
+    padding: 80px 0 40px;
+    background: #F3F5F9;
+}.layout {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}.indexPro {
+    margin-top: 30px;background: #fff;
+}.indexPro-head {
+    width: 1200px;
+    height: 80px;
+    background: #FFF;
+    box-shadow: 0 1px 0 0 #F1F4F7;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+}.indexPro-title {
+    float: left;
+    font-size: 24px;
+    color: #262626;
+    line-height: 80px;
+    padding-left: 32px;
+}.indexPro-title span {
+    width: 6px;
+    height: 24px;
+    background: #D7DDE6;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    top: 3px;
+}.indexPro-nav {
+    float: right;
+    line-height: 80px;
+    margin-right: 76px;
+}.indexPro-nav a {
+    font-size: 14px;
+    color: #595959;
+    display: inline-block;
+}.indexPro-nav em {
+    width: 1px;
+    height: 14px;
+    background: #E0E6ED;
+    display: inline-block;
+    margin: 0 16px;
+    position: relative;
+    top: 2px;
+}.indexPro-post {
+    display: block;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/more.png) no-repeat center;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}.indexPro-head {
+    width: 1200px;
+    height: 80px;
+    background: #FFF;
+    box-shadow: 0 1px 0 0 #F1F4F7;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+}.indexPro-left {
+    width: 360px;
+    height: 491px;
+    padding: 0 36px;
+    float: left;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/wt1.png) no-repeat 
+}.indexPro-tle {
+    font-size: 28px;
+    line-height: 40px;
+    color: #262626;
+    padding-top: 30px;
+}.indexPro-ftl {
+    font-size: 14px;
+    line-height: 20px;
+    color: #595959;
+    margin-top: 4px;
+}.indexPro-img {
+    margin-top: 20px;
+    overflow: hidden;
+}.indexPro-img img {
+    width: 100%;
+    transition: .3s;
+}.indexPro-tag {
+    margin-left: -8px;
+    margin-top: 22px;
+    height: 105px;
+    overflow: hidden;
+}.indexPro-tag a {
+    float: left;
+    font-size: 12px;
+    line-height: 17px;
+    color: #595959;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.8);
+    margin-top: 8px;
+    margin-left: 8px;
+}.indexPro-tag a:hover {
+    font-weight: 700;
+}
+.indexPro-list {
+    width: 599px;
+    float: left;
+}
+.indexPro-item {
+    float: left;
+    width: 199px;
+    height: 245px;
+    text-align: center;
+    border-right: 1px solid #F1F4F7;
+    border-top: 1px solid #F1F4F7;
+    padding: 20px 30px;
+}.indexPro-images {
+    width: 100%;
+    height: 139px;
+    overflow: hidden;
+    position: relative;
+}.indexPro-images img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: .3s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}.indexPro-info {
+    padding-top: 20px;
+}.indexPro-tit {
+    font-size: 15px;
+    line-height: 26px;
+    color: #262626;
+    font-weight: 700;
+}.indexPro-jt {
+    font-size: 12px;
+    line-height: 16px;
+    color: #595959;
+    margin-top: 4px;
+}.indexPro-right {
+    width: 240px;
+    height: 491px;
+    float: right;
+    padding: 0 24px;
+}
+.indexProR-bt {
+    width: 123px;
+    height: 21px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/slbt.png) no-repeat center;
+    margin: 21px auto 0;
+}.indexProR-all {
+    padding-top: 4px;
+}.indexProR-img {
+    width: 152px;
+    height: 54px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}.indexProR-all a{
+        display: block;
+        background: linear-gradient(90deg,#F5F6F7 0,#FCFCFC 100%);
+        border-radius: 2px;
+        padding: 12px 0;
+        text-align: center;
+        margin-top: 12px;
+}.indexProR-img img {
+    transition: .3s;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}.indexProR-all a:hover img {
+    transform: scale(1.05);
+}.indexProR-all a:hover .indexProR-tit{
+    color: #2769DC;
+}.indexProR-tit {
+    font-size: 14px;
+    line-height: 24px;
+    color: #262626;
+    margin-top: 12px;
+    overflow: hidden;
+    height: 24px;
+    padding: 0 15px;
+}
+.indexProR-zm {
+    margin-top: 12px;
+}.indexProR-zm a {
+    width: 100%;
+    height: 36px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/post.png) no-repeat 148px center;
+    border-radius: 2px;
+    border: 1px solid #E0E6ED;
+    line-height: 36px;
+    display: block;
+    font-size: 14px;
+    color: #262626;
+    text-indent: 20px;
+}.indexProR-zm a:hover {
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/posts.png) no-repeat 148px center;
+}.indexProR-zm em {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(//static.gcimg.net//gongchang2022/2022/0926/zhaomu.png) no-repeat center;
+    margin-right: 4px;
+    position: relative;
+    top: 6px;
+}
+.proEs {
+    width: 1200px;
+    background: #fff;
+    margin: 30px auto 0;
+}.proEs-head a {
+    width: 171px;
+    float: left;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+}.proEs-head a:hover{
+    color: #2769DC;
+}
+.proEs-head .active {
+    color: #1E60D3;
+    line-height: 44px;
+    border-top: 2px solid #2A68D5;
+}
+.proEs-main a {
+    width: 171px;
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #262626;
+    text-indent: 20px;
+    margin-top: 8px;
+}
+.proEs-main a:hover {
+    color: #2769DC;
+}.proEs-main {
+    padding: 12px 0 20px;
+    border-top: 1px solid #F1F4F7;
+}.index-footer .footer {
+    padding: 41px 0 102px;color: #999;
+    font-size: 14px;    background: #1E2E54;
+}
+.layout {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}.footer .links {
+    margin-bottom: 24px;
+    text-align: center;
+    line-height: 20px;
+    color: #CFD9E6;
+}
+.index-footer .footer .links a {
+    color: rgba(255,255,255,.4);    margin: 0 15px;
+}
+.footer .links span {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    height: 14px;
+    font-size: 0;
+    overflow: hidden;    border-right: solid 1px rgba(255,255,255,.4);
+}.footer .cert {
+    margin-bottom: 20px;
+    text-align: center;
+}.footer .cert-item {
+    margin: 0 6px;
+}.footer .cert-item a {
+    display: inline-block;
+    margin: 0;
+}.footer .licence-wrap {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0;
+}.footer .licence, .footer .licence-wrap a {
+    display: inline-block;
+    font-size: 14px;
+}.footer .f-cert {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+.index-footer .f-cert a {
+    color: rgba(255,255,255,.2);margin-bottom: 10px;
+}
+.footer .f-cert::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: -10px;
+    height: 14px;
+}.index-footer .footer .f-cert::after {
+    border-right: solid 1px rgba(255,255,255,.2);
+}
+.index-footer .copyright {
+    color: rgba(255,255,255,.2);  text-align: center;
+}.index-footer .bei-box {
+    color: rgba(255,255,255,.2);    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

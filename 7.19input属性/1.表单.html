@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<meta name="author" content="金西振" />
+		<title></title>
+		<style>
+			table {
+				border: 1px solid black;
+				border-spacing: 0;
+				/* border-collapse: separate; */
+				border-collapse: collapse;
+			}
+			.table-box tr td {
+				border: 1px solid black;
+				width: 100px;
+				height: 30px;
+				padding: 0;
+			}
+			.table-box .tr1 > .td1 {
+				width: 50px;
+			}
+			.table-box .tr1 > .td3 {
+				width: 200px;
+			}
+			.table-box .tr1 > .td4 {
+				width: 200px;
+			}
+			.table-box .tr1 > .td5 {
+				width: 80px;
+			}
+			.table-box .tr9 > .td1 {
+				width: 50px;
+			}
+
+			.table-inner {
+				border: none;
+			}
+			.table-inner tr > td {
+				/* border: none; */
+			}
+			.table-inner .tr01 > td {
+				border-top: none;
+			}
+			.table-inner .tr07 > td {
+				border-bottom: none;
+			}
+			.table-inner tr > .td01 {
+				border-left: none;
+			}
+			.table-inner tr > .td10 {
+				border-right: none;
+			}
+		</style>
+	</head>
+	<body>
+		<table class="table-box">
+      <caption>报销单</caption>
+			<thead>
+				<tr>
+					<th>表头1</th>
+					<th>表头2</th>
+					<th>表头3</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr class="tr1">
+					<td colspan="2">报销项目</td>
+					<!-- <td>1</td> -->
+					<td class="td3">摘要</td>
+					<td class="td4">金额</td>
+					<td colspan="2" class="td5">审批</td>
+					<!-- <td>2</td> -->
+				</tr>
+				<tr class="tr2">
+					<td colspan="2"></td>
+					<!-- <td></td> -->
+					<td></td>
+					<td rowspan="7">
+						<table class="table-inner">
+							<tr class="tr01">
+								<td class="td01">千</td>
+								<td class="td02">百</td>
+								<td class="td03">十</td>
+								<td class="td04">万</td>
+								<td class="td05">千</td>
+								<td class="td06">百</td>
+								<td class="td07">十</td>
+								<td class="td08">元</td>
+								<td class="td09">角</td>
+								<td class="td10">分</td>
+							</tr>
+							<tr class="tr02">
+								<td class="td01"></td>
+								<td class="td02"></td>
+								<td class="td03"></td>
+								<td class="td04"></td>
+								<td class="td05"></td>
+								<td class="td06"></td>
+								<td class="td07"></td>
+								<td class="td08"></td>
+								<td class="td09"></td>
+								<td class="td10"></td>
+							</tr>
+							<tr class="tr03">
+								<td class="td01"></td>
+								<td class="td02"></td>
+								<td class="td03"></td>
+								<td class="td04"></td>
+								<td class="td05"></td>
+								<td class="td06"></td>
+								<td class="td07"></td>
+								<td class="td08"></td>
+								<td class="td09"></td>
+								<td class="td10"></td>
+							</tr>
+							<tr class="tr04">
+								<td class="td01"></td>
+								<td class="td02"></td>
+								<td class="td03"></td>
+								<td class="td04"></td>
+								<td class="td05"></td>
+								<td class="td06"></td>
+								<td class="td07"></td>
+								<td class="td08"></td>
+								<td class="td09"></td>
+								<td class="td10"></td>
+							</tr>
+							<tr class="tr05">
+								<td class="td01"></td>
+								<td class="td02"></td>
+								<td class="td03"></td>
+								<td class="td04"></td>
+								<td class="td05"></td>
+								<td class="td06"></td>
+								<td class="td07"></td>
+								<td class="td08"></td>
+								<td class="td09"></td>
+								<td class="td10"></td>
+							</tr>
+							<tr class="tr06">
+								<td class="td01"></td>
+								<td class="td02"></td>
+								<td class="td03"></td>
+								<td class="td04"></td>
+								<td class="td05"></td>
+								<td class="td06"></td>
+								<td class="td07"></td>
+								<td class="td08"></td>
+								<td class="td09"></td>
+								<td class="td10"></td>
+							</tr>
+							<tr class="tr07">
+								<td class="td01"></td>
+								<td class="td02"></td>
+								<td class="td03"></td>
+								<td class="td04"></td>
+								<td class="td05"></td>
+								<td class="td06"></td>
+								<td class="td07"></td>
+								<td class="td08"></td>
+								<td class="td09"></td>
+								<td class="td10"></td>
+							</tr>
+						</table>
+					</td>
+					<td rowspan="2">
+						<div>负责人</div>
+						<div>（签章）</div>
+					</td>
+					<td rowspan="2"></td>
+				</tr>
+				<tr class="tr3">
+					<td colspan="2"></td>
+					<!-- <td></td> -->
+					<td></td>
+					<!-- <td></td> -->
+					<!-- <td></td> -->
+					<!-- <td></td> -->
+				</tr>
+				<tr class="tr4">
+					<td colspan="2"></td>
+					<!-- <td></td> -->
+					<td></td>
+					<!-- <td></td> -->
+					<td rowspan="2">审查意见</td>
+					<td rowspan="2"></td>
+				</tr>
+				<tr class="tr5">
+					<td colspan="2"></td>
+					<!-- <td></td> -->
+					<td></td>
+					<!-- <td></td> -->
+					<!-- <td></td> -->
+					<!-- <td></td> -->
+				</tr>
+				<tr class="tr6">
+					<td colspan="2"></td>
+					<!-- <td></td> -->
+					<td></td>
+					<!-- <td></td> -->
+					<td rowspan="2">
+						<div>报销人</div>
+						<div>（签章）</div>
+					</td>
+					<td rowspan="2"></td>
+				</tr>
+				<tr class="tr7">
+					<td colspan="2"></td>
+					<!-- <td></td> -->
+					<td></td>
+					<!-- <td></td> -->
+					<!-- <td></td> -->
+					<!-- <td></td> -->
+				</tr>
+				<tr class="tr8">
+					<td colspan="3">合计</td>
+					<!-- <td></td>
+				<td></td> -->
+					<!-- <td></td> -->
+					<td colspan="2">￥：</td>
+					<!-- <td></td> -->
+				</tr>
+				<tr class="tr9">
+					<td class="td1">金额大写</td>
+					<td class="td2" colspan="2">仟佰</td>
+					<!-- <td></td> -->
+					<td>借款数：元</td>
+					<td colspan="2">应退补款：元</td>
+					<!-- <td></td> -->
+				</tr>
+			</tbody>
+      <tfoot>
+        <tr>
+          <td>表格底部</td>
+        </tr>
+      </tfoot>
+		</table>
+	</body>
+</html>

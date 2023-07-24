@@ -1,0 +1,139 @@
+*{
+    margin: 0;padding: 0;list-style: none;
+}
+a{
+    text-decoration: none;color: rgb(0, 89, 128);
+}
+a:hover{
+    color: #1283ba;
+}
+.box{
+    display: flex;width: 1000px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 20px 80px 0px rgba(0,0,0,0.3);
+}
+.box-left{
+    width: 50%;
+    background-image: url(./img/屏幕截图\ 2023-07-19\ 193433.png);
+    /* border: 1px solid blue; */
+    height: 574px;
+}
+.box-right{
+    width: 50%;
+    /* border: 1px solid red; */
+    background-color: #FFFFFF;
+    padding: 64px 70px 48px;
+    box-sizing: border-box;
+}
+.right-head{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.right-head span{
+    margin-top: auto;
+    font-size: 14px;
+}
+#text ,#password{
+    padding-top: 0.64286em;
+    padding-bottom: 0.64286em;
+    box-sizing: border-box;
+    line-height: 1.42858rem;
+    font-size: 1rem;
+    width: 100%;
+    /* height: 20px; */
+    margin: 15px 0;
+}
+.login-footer{
+    width: 100%;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+.login-footer label:hover{
+    color: rgba(0,0,0,0.8);
+}
+#checkbox{
+    width: 17px;
+    height: 17px;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: 4px;
+    margin-right: 4px;
+}
+.login-ma{
+    float: right;
+    color: rgb(0, 89, 128);
+}
+.color{
+    background-color: rgb(254, 115, 0);
+}
+.login-div{
+    font-size: 14px;
+    width: 100%;
+    padding: 8px 26px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;margin: 10px 0;
+}
+.login-div:hover{
+    background: #f38d30;
+}
+.login-div2{
+    font-size: 14px;
+    width: 100%;
+    padding: 8px 26px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+.login-div3{
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 10px 0;
+}
+.logins{
+    width: 100%;
+}
+
+.order {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+ }
+  .order .line {
+    display: inline-block;
+    width: 37%;
+    border-top: 1px solid #ccc ;
+ }
+ .order .txt {
+    color: #686868;
+    vertical-align: middle;
+ }
+ .login-ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+ .login-ul li{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+ }
+ .none{
+    display: none;
+ }
+ .none ul{
+    display: flex;
+ }
+ .none ul>li{}

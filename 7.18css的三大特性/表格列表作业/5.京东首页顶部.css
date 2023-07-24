@@ -25,7 +25,7 @@ a {
 .nav_box_div li {
     /* padding: 0 2px; */
     display: inline-block;
-    position: relative;padding: 0 5px;
+    position: relative;
 }
 
 .qwe {
@@ -52,7 +52,7 @@ a {
     justify-content: space-around;
 }
 
-/* .after::after{
+.after::after{
     color: #999;
     content: "^";
     font-size: 12px;
@@ -60,7 +60,7 @@ a {
     position: absolute;
     top: -2px;
     right: -12px;
-} */
+}
 .after:hover{
     background-color: #FFFFFF
 }
