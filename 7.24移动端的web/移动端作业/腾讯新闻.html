@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            height: 7.68rem;
+            /* background: #3377ff; */
+            padding: 0 1.0375rem;
+            background: #3377ff;
+            margin-bottom: -1.75rem;
+        }
+
+        .top {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding-top: 1.45rem;
+        }
+
+        .top-img-left {
+            background-image: url(https://inews.gtimg.com/newsapp_bt/0/022016022622_1338/0);
+            height: 0.18rem;
+            width: 4.5rem;
+            height: 1.1875rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% 100%;
+        }
+
+        .unlogin-a {
+            width: 12.266667vw;
+            background-image: url(https://inews.gtimg.com/newsapp_bt/0/0221162903280_8332/0);
+            background-size: 1.3125rem 1.3125rem;
+            padding-left: 1.5rem;
+            font-size: .91rem;
+            background-repeat: no-repeat;
+            color: white;
+            margin-right: .91rem;
+        }
+
+        .unlogin {
+            height: 1.425rem;
+            width: 1.425rem;
+            border-radius: 50%;
+            background-image: url(https://inews.gtimg.com/newsapp_bt/0/0224101650864_6206/0);
+            background-size: 100% 100%;
+            float: right;
+        }
+
+        .wrapper {
+            text-align: center;
+            padding-top: .576rem;
+
+        }
+
+        .wrapper ul {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            font-size: 1.0625rem;
+
+            color: white;
+            text-align: center;
+        }
+
+        .wrapper ul li {
+            width: 50%;
+            position: relative;
+        }
+
+        .font-weight {
+            font-weight: 700;
+        }
+
+        .wrapper ul li:nth-child(1)::after {
+            content: '';
+            display: block;
+            width: 1.3125rem;
+            height: .16875rem;
+            background: rgba(103, 245, 255, 1);
+            margin: 0px auto;
+            border-radius: .58rem;
+            position: absolute;
+            left: calc(50% - 1.3125rem/2);
+            bottom: -0.1875rem;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 1);
+            border-radius: .39rem;
+            padding: .90625rem 0 .78rem .2925rem;
+            margin: 0 .975rem .195rem;
+        }
+
+        section ul {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .section-item {
+            font-size: 1.0375rem;
+            font-family: 'PingFang SC';
+            font-style: normal;
+            font-weight: 400;
+            padding: 0 .65rem;
+            height: 1.375rem;
+            color: rgba(51, 51, 51, 1);
+            line-height: 1.375rem;
+            float: left;
+            text-align: center;
+            margin-bottom: .455rem;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .section-item img {
+            width: .84375rem;
+            height: .7625rem;
+            vertical-align: middle;
+        }
+
+        .stickNews {
+            padding-top: .4875rem;
+        }
+
+        .container {
+            margin: 0px .975rem;
+            overflow: hidden;
+        }
+
+        .container a {
+            padding: .2925rem 0;
+            display: block;
+        }
+
+        .container a p {
+            margin-bottom: .26rem;
+            color: rgb(31, 31, 31);
+            font-size: 1.17rem;
+            font-weight: 400;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+
+        .root-sec {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #999999;
+            font-size: 0;
+        }
+
+        .root-sec span {
+            margin-right: .585rem;
+            font-size: .75rem;
+        }
+
+        .root-sec span:nth-of-type(1) {
+            color: #3377FF;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="top-img-left"></div>
+            <div class="topimg-right">
+                <a class="unlogin-a" href="#">无障碍设置</a>
+                <div class="unlogin"></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <ul>
+                <li class="font-weight"><a href="#">要闻</a></li>
+                <li><a href="#">视频</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <section>
+        <ul>
+            <li class="section-item"><a href="#">NBA</a></li>
+            <li class="section-item"><a href="#">娱乐</a></li>
+            <li class="section-item"><a href="#">郑州</a></li>
+            <li class="section-item"><a href="#">军事</a></li>
+            <li class="section-item"><a href="#">国际</a></li>
+            <li class="section-item"><a href="#">科技</a></li>
+            <li class="section-item"><a href="#">体育</a></li>
+            <li class="section-item"><a href="#">财经</a></li>
+            <li class="section-item"><a href="#">汽车</a></li>
+            <li class="section-item"><a href="#">历史</a></li>
+            <li class="section-item"><a href="#">房产</a></li>
+            <li class="section-item"><a href="#">体育</a></li>
+            <li class="section-item"><a href="#">财经</a></li>
+            <li class="section-item"><a href="#">汽车</a></li>
+            <li class="section-item"><a href="#">历史</a></li>
+            <li class="section-item"><a href="#">房产</a></li>
+            <li class="section-item"><a href="#">
+                    <img src="https://inews.gtimg.com/newsapp_bt/0/022016264766_9998/0" alt="">
+                </a></li>
+        </ul>
+    </section>
+    <div class="stickNews">
+        <div class="container">
+            <a href="#">
+                <p>习近平总书记谈伟大抗美援朝精神</p>
+                <div class="root-sec">
+                    <span>置顶</span>
+                    <span>新华网</span>
+                    <span>21评</span>
+                    <span>7小时前</span>
+                </div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="#">
+                <p>习近平总书记谈伟大抗美援朝精神</p>
+                <div class="root-sec">
+                    <span>置顶</span>
+                    <span>新华网</span>
+                    <span>21评</span>
+                    <span>7小时前</span>
+                </div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="#">
+                <p>习近平总书记谈伟大抗美援朝精神</p>
+                <div class="root-sec">
+                    <span>置顶</span>
+                    <span>新华网</span>
+                    <span>21评</span>
+                    <span>7小时前</span>
+                </div>
+            </a>
+        </div>
+        <div class="container">
+            <a href="#">
+                <p>习近平总书记谈伟大抗美援朝精神</p>
+                <div class="root-sec">
+                    <span>置顶</span>
+                    <span>新华网</span>
+                    <span>21评</span>
+                    <span>7小时前</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // 根据设备宽度计算 html的font-size
+    function resetHtmlFont() {
+        // 获取html对象动态设置font-size = 设备宽度/24.2
+        document.documentElement.style.fontSize = screen.width / 24.2 + 'px';
+    }
+    resetHtmlFont()
+    // 如果窗口大小变化了，则重新计算基础font-size
+    window.onresize = resetHtmlFont;
+</script>

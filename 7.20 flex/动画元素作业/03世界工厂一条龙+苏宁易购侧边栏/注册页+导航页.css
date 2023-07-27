@@ -1,0 +1,135 @@
+.headR-h2 {
+    float: left;
+    margin-top: 9px;
+}
+
+.headR-h2 h2 {
+    float: left;
+    display: inline;
+    height: 40px;
+    margin-left: 32px;
+    margin-top: 3px;
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    border-left: 1px solid #d8d8d8;
+}
+
+.footer {
+
+    background: #F7F9FA !important;
+}
+
+.links a {
+    color: #595959 !important;
+}
+
+.f-cert a {
+    color: rgb(153, 153, 153) !important;
+}
+
+.f-cert a:hover {
+    color: #000 !important;
+}
+
+.copyright {
+    color: rgb(153, 153, 153) !important;
+}
+
+.bei-box {
+    color: rgb(153, 153, 153) !important;
+}
+.layouting{
+    padding: 40px 0;
+    /* border: 1px solid black; */
+    /* background: #fff;
+    box-shadow: 0 6px 24px -10px rgba(107,107,107,.2);
+    border-radius: 3px; */
+}
+.register-left{
+    float: left;
+    width: 840px;
+    padding: 72px 200px 60px;
+    background: url(//static.gcimg.net//gongchang2022/2022/0627/register-bg1.png) no-repeat;
+}.form-item input {
+    padding: 10px 15px 10px 100px;
+    border: 1px solid #e0e6ed;
+    outline-color:#7DA5EA;
+    width: 100%;
+}.form-body{
+    position: relative;  margin-bottom: 24px;
+}label{
+    position: absolute;
+    top: 0;
+    margin: 10px 0;
+    font-size: 14px;
+    left: 15px;
+}
+sub{
+    color: red;
+}
+.item-p{
+    width: 326px;
+    padding: 16px;
+    background: #EAF5FE;
+    box-shadow: 0 6px 12px -9px rgba(52,91,157,.6);
+    border: 1px solid #C4E4FD;
+    border-radius: 4px;
+    position: absolute;
+    right: -340px;
+    top: 0;
+    font-size: 14px;
+    display: none;
+}.form-body:hover .item-p{
+    display: block;
+}
+.code{
+    width: 110px;
+    /* height: 48px; */
+    position: absolute;
+    top: 0;right: 0;font-size: 14px;color: #2769dc;
+    border: 1px solid #e0e6ed;
+    padding: 8px 0;text-align: center;
+}.register-right{
+    float: right;
+    width: 358px;
+    height: 514px;
+    padding: 72px 60px 0;
+    background: #F0F9FD url(//static.gcimg.net//gongchang2022/2022/0627/register-bg2.png) no-repeat;
+    font-size: 14px;
+    border-radius: 0 3px 3px 0
+}.register-right p {
+    margin-bottom: 10px;
+}.register-right a {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: #2769DC;
+}.isread-box {
+    font-size: 14px;
+    margin-bottom: 15px;
+}.isread-box input {
+    float: left;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    top: 3px;margin-right: 9px;
+}.isread-box .service-rules {
+    /* float: left; */
+    color: #2769dc;
+}.submit-btn {
+    display: block;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    background: #2769DC;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .3s;
+}.submit-btn:hover {
+    background: #1173F2;
+    box-shadow: 0 6px 18px -9px #2769DC;
+}

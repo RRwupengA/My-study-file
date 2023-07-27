@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 统一视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        html{
+            /* 使用js动态设置设备宽度计算的大小 */
+            font-size: 75px;
+        }
+        .box{
+            
+            /* px无法时间等比缩放 */
+
+            width:5rem;
+            height: 5rem;
+            
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- 需求：移动端UI设计稿750px,假设有一个元素宽度375px，那么按照比例应该是当前元素在任何宽度的设备上都有该占有整体宽的的2分之1 -->
+    <div class="box">
+
+    </div>
+    <script>
+        // 根据设备宽度计算 html的font-size
+        function resetHtmlFont(){
+            // 获取html对象动态设置font-size = 设备宽度/10
+            document.documentElement.style.fontSize= screen.width/10  +'px';      
+        }
+        resetHtmlFont()
+        // 如果窗口大小变化了，则重新计算基础font-size
+        window.onresize = resetHtmlFont;
+    </script>
+</body>
+</html>

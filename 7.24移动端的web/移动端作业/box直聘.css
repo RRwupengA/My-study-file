@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+header {
+    height: 16.875rem;
+    background-color: #35b9b3;
+    color: #fff;
+    padding: 15px;
+}
+
+header .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 26px;
+    width: 26px;
+    background: url(https://static.zhipin.com/zhipin-geek/v673/h5/wap/images/logo-x.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+.login{
+    background: #fff;
+    border-radius: 13px;
+    border: 1px solid #fff;
+    font-size: 12px;
+    color: #54bcb7;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 11px;
+    margin-right: -2px;
+}
+.bottom{
+    height: 208px;
+    background: url(https://static.zhipin.com/zhipin-geek/v673/h5/wap/images/home-banner.png) no-repeat center center;
+    background-size: 335px 208px;;
+}
+.hot-job {
+    background-color: #FFFFFF;
+    padding: 0 20px;
+}
+.search{
+    margin-top: -32px;
+        float: none;
+        padding: 0;
+        width: 100%;
+}
+.search form{
+    display: flex;
+    align-items: center;
+
+}
+.ipt-wrap{
+    margin: 0 15px;
+    padding-right: 70px;
+    background: #fff;
+    border-radius: 30px;
+    position: relative;
+    width: 100%;
+}
+.btn-search {
+    background-color: #fff;
+    color: #5bd4c7;
+    font-size: 14px;
+    position: absolute;
+    border: none;
+    width: 60px;
+    top: 2px;
+    right: 8px;
+    background: 0 0;
+}.btn {
+    display: inline-block;
+    height: 34px;
+    font-size: 14px;
+    color: #5dd5c8;
+    text-align: center;
+}.search .ipt-search {
+    padding-left: 82px;    width: 100%;
+    height: 37px;
+    line-height: 32px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    color: #aeaeae;
+    text-align: left;
+    background: #fff;
+}.ipt-wrap .city-btn {
+    position: absolute;
+    left: 18px;
+    top: 9px;
+    color: #414a60;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 10px;
+    height: 18px;
+}.left-name{
+    max-width: 42px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}.ipt-wrap .city-btn .right-icon {
+    margin-left: 4px;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 4px solid #000;
+}
+.hot-job .item-list {
+    /* width: 100%; */
+    width: calc(100vw - 20px * 2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sub-name h4 {
+    color: #333;
+    font-family: PingFangSC-Semibold,PingFang SC;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;    padding: 28px 20px 15px;
+}
+.hot-job .item {
+    width: calc((100% - 10px * 2) / 3);
+    height: 36px;
+    padding: 7px 10px;
+    font-size: 14px;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}.chat-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 15px;
+}.chat-icon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}.chat-wrap .chat-img-new {
+    width: 24px;
+    height: 23px;
+    background: url(https://static.zhipin.com/zhipin-geek/v673/h5/wap/images/home/info.png) no-repeat;
+}.has-chat::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #fd896b;
+}.right-icon {
+    margin-left: 4px;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 4px solid #000;
+}.login-wrap a{
+    margin: 10px 20px 4px;
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.08);
+    display: flex;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.login-wrap span{
+    font-size: 13px;
+    color: #666;
+    line-height: 26px;
+}
+.login-div{
+    width: 72px;
+    height: 26px;
+    background: #37c2bc;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 26px;
+}
+.content-title-a{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-conten{
+    display: inline-block;
+    margin-bottom: 20px;width: 100%;
+}
+.buttom-div-item {
+    padding: 18px 20px 17px;
+    margin-bottom: 6px;
+    height: auto;
+    background: #fff;
+    position: relative;
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7px;
+    }.title-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        line-height: 25px;
+        padding-right: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-all;
+    }.title .salary {
+        font-size: 18px;
+        color: #f67b4e;
+        line-height: 22px;
+        flex-shrink: 0;
+        font-family: kanzhun-Regular,kanzhun;
+    }
+}
+.name {
+    display: flex;
+    margin-bottom: 9px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+.name span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    line-height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.labels{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.labels span{
+    display: inline-block;
+padding: 3px 7px;
+font-size: 12px;
+color: #666;
+line-height: 17px;
+background: #f5f5f5;
+border-radius: 3px;
+margin-right: 6px;
+margin-bottom: 5px;
+}.recruiter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.recruiter .user-wrap {
+    display: flex;
+    align-items: center;
+}.recruiter img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #40e0d0;
+    margin-right: 8px;
+}.name-buttom {
+    font-size: 12px;
+    color: #333;
+    line-height: 17px;
+    margin-bottom: 0;
+}.recruiter .btn-chat {
+    width: 100px;
+    height: 30px;
+    background: #37c2bc;
+    border-radius: 15px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+}

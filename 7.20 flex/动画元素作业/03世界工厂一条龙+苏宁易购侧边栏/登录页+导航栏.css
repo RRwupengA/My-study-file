@@ -1,0 +1,207 @@
+.headR-h2 {
+    float: left;
+    margin-top: 9px;
+}
+
+.headR-h2 h2 {
+    float: left;
+    display: inline;
+    height: 40px;
+    margin-left: 32px;
+    margin-top: 3px;
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    border-left: 1px solid #d8d8d8;
+}
+
+.background {
+    background: #020c3f;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.background .top-a {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.login-form {
+    width: 360px;
+    background: #fff;
+    border-radius: 3px;
+    padding: 24px 0 0 0;
+}
+
+.top-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #262626;
+}
+
+.item-login {
+    position: relative;
+}
+
+.top-login .item-login:nth-of-type(1) {
+    color: #2769dc;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: default;
+}
+
+.item3-span {
+    position: absolute;
+    right: 3px;
+    top: -19px;
+    width: 80px;
+}
+
+.form-main {
+    position: relative;
+    padding: 24px 30px
+}
+
+.tab-form-content {
+    position: relative;
+    display: block
+}
+
+.form-main .form-row {
+    position: relative;
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+.form-main .icon-mobile {
+    display: inline-block;
+    background: url(//static.gcimg.net//gongchang2022/2022/0627/mobile-icon.png) no-repeat center;
+    background-size: 24px;
+}
+
+.form-main .icon-lock {
+    display: inline-block;
+    background: url(//static.gcimg.net//gongchang2022/2022/0627/lock-icon.png) no-repeat center;
+    background-size: 24px;
+}
+
+.form-main .iconfont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+}
+
+.form-item {
+    position: relative;
+    width: 100%;
+    height: 48px;
+}
+
+.form-item input {
+    display: block;
+    height: 42px;
+    width: 100%;
+    padding: 11px 0 11px 46px;
+    border: 1px solid #e0e6ed;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #262626;
+    ;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.code-btns {
+    width: 94px;
+    height: 42px;
+    padding: 10px 0;
+    line-height: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: solid 1px #E0E6ED;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.codebtn {
+    color: #2769dc;
+    font-size: 12px;
+}
+
+.check-row {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.checkbox {
+    float: left;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.submit-btn {
+    height: 46px;
+    line-height: 46px;
+    display: block;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    background: #2769DC;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .3s
+}
+
+.submit-btn:hover {
+    background: #1173F2;
+    box-shadow: 0 6px 18px -9px #2769DC;
+}
+
+.login-tips {
+    margin-top: 12px;
+    color: #999;
+    font-size: 14px;
+}
+
+.bottom {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    background: #F1F4F7;
+}.bottom a{
+    float: right;
+    font-size: 14px;
+}.footer{
+    
+background: #F7F9FA!important;
+}
+.links a{
+     color: #595959!important;
+}.f-cert a{
+    color: rgb(153, 153, 153)!important;
+}.f-cert a:hover{
+    color: #000!important;
+}
+.copyright{
+    color: rgb(153, 153, 153)!important;
+}.bei-box{
+    color: rgb(153, 153, 153)!important;
+}

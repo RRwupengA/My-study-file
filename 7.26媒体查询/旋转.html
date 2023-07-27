@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;height: 200px;background-color: aquamarine;position: relative;
+        }
+        .inner{
+            width: 100px;height: 100px;background-color: pink;position: absolute;top: 50px;left: 50px;
+        }
+        @keyframes inner {
+                0%{
+                    background-color:red;
+                    transform: rotateX(90deg);transform: rotatez(90deg);transform: rotateZ(90deg);transform: rotateY(90deg);
+                }
+                50%{
+                    background-color:yellow;transform: rotateX(180deg);transform: rotateZ(180deg);transform: rotateY(180deg);
+                }
+                100%{
+                    background-color:black;transform: rotateX(3600deg);transform: rotateZ(360deg);transform: rotateY(3600deg);
+                }
+            }
+        .box:active .inner{
+            animation: inner 3s infinite;
+        }
+    </style>
+</head> 
+<body>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

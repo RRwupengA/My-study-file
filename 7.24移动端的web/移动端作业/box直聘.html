@@ -1,80 +1,194 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-        <title>Document</title>
-		<title></title>
-		<style>
-			* {
-				padding: 0;
-				margin: 0;
-				box-sizing: border-box;
-			}
-			ul {
-				list-style: none;
-			}
-			header {
-				height: 100px;
-				background-color: #35b9b3;
-				color: #fff;
-				padding: 15px;
-			}
-			header .top {
-				background-color: red;
-				display: flex;
-				justify-content: space-between;
-			}
-			.hot-job {
-				background-color: lightblue;
-				padding: 0 20px;
-			}
-			.hot-job .item-list {
-				/* width: 100%; */
-				width: calc(100vw - 20px * 2);
-				background-color: red;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-			}
-			.hot-job .item {
-				width: calc((100% - 10px * 2) / 3);
-				height: 36px;
-				padding: 7px 14px;
-				font-size: 14px;
-				border: 1px solid;
-				background-color: blue;
-        margin-bottom: 10px;
-        text-align: center;
-        color: #fff;
-			}
-		</style>
-	</head>
-	<body>
-		<header>
-			<div class="top">
-				<div class="logo">BOSS直聘</div>
-				<div class="login">登录</div>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./box直聘.css">
+</head>
+
+<body>
+	<header>
+		<div class="top">
+			<div class="logo"></div>
+			<div class="login">登录/注册</div>
+		</div>
+		<div class="bottom"></div>
+		<div class="search">
+			<form>
+				<p class="ipt-wrap">
+					<button class="btn btn-search">搜索</button>
+					<input type="text" class="ipt-search" placeholder="搜索在职公司">
+					<span class="city-text city-btn">
+						<span class="left-name">郑州</span>
+						<span class="right-icon"></span>
+					</span>
+				</p>
+				<div class="chat-wrap">
+					<div class="chat-icon has-chat">
+						<div class="chat-img-new"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</header>
+	<main>
+		<div class="sub-name">
+			<h4>热门职位</h4>
+		</div>
+		<div class="hot-job">
+			<ul class="item-list">
+				<li class="item">Java</li>
+				<li class="item">Android</li>
+				<li class="item">测试工程师</li>
+				<li class="item">运维工程师</li>
+				<li class="item">网络工程师</li>
+				<li class="item">IT技术支持</li>
+				<li class="item">数据开发</li>
+				<li class="item">数据分析师</li>
+				<li class="item">实施工程师</li>
+			</ul>
+		</div>
+		<div class="sub-name">
+			<h4>精选职位</h4>
+		</div>
+		<div class="login-wrap">
+			<a href="#">
+				<span>登陆后可根据个人期望精准匹配</span>
+				<div class="login-div">
+					立即登录
+				</div>
+			</a>
+		</div>
+		<div class="buttom-div-item">
+<div class="content-title-a">
+	<a href="#" class="title-conten">
+		<div class="title">
+			<span class="title-text">【首月1w】+无责底薪4700+高提成线上销售</span>
+			<span class="salary">8-13K</span>
+		</div>
+		<div class="name">
+			<span class="company">中安建培</span>
+			<span class="workplace">郑州</span>
+		</div>
+		<div class="labels">
+			<span>经验不限</span>
+			<span>高中</span>
+			<span>无经验要求</span>
+			<span>电话销售经验</span>
+			<span>网络销售经验</span>
+		</div>
+		<div class="recruiter">
+			<div class="user-wrap">
+				<img src="https://img.bosszhipin.com/beijin/upload/avatar/20230515/607f1f3d68754fd06c74079dd7291a4dee04f308fcaf1b4afe52c3d2f99e7452479317c205293085_s.jpg?x-oss-process=image/resize,w_100,limit_0" alt="">
+				<div class="name-buttom">郭女士·人事经理</div>
 			</div>
-			<div class="bottom">
-				<input type="text" />
+			<div class="btn-chat">立即沟通</div>
+		</div>
+	</a>
+	<a href="#" class="title-conten">
+		<div class="title">
+			<span class="title-text">【首月1w】+无责底薪4700+高提成线上销售</span>
+			<span class="salary">8-13K</span>
+		</div>
+		<div class="name">
+			<span class="company">中安建培</span>
+			<span class="workplace">郑州</span>
+		</div>
+		<div class="labels">
+			<span>经验不限</span>
+			<span>高中</span>
+			<span>无经验要求</span>
+			<span>电话销售经验</span>
+			<span>网络销售经验</span>
+		</div>
+		<div class="recruiter">
+			<div class="user-wrap">
+				<img src="https://img.bosszhipin.com/beijin/upload/avatar/20230515/607f1f3d68754fd06c74079dd7291a4dee04f308fcaf1b4afe52c3d2f99e7452479317c205293085_s.jpg?x-oss-process=image/resize,w_100,limit_0" alt="">
+				<div class="name-buttom">郭女士·人事经理</div>
 			</div>
-		</header>
-		<main>
-			<div class="hot-job">
-				<ul class="item-list">
-					<li class="item">选项1</li>
-          <li class="item">选项2</li>
-          <li class="item">选项3</li>
-          <li class="item">选项4</li>
-          <li class="item">选项5</li>
-          <li class="item">选项6</li>
-          <li class="item">选项7</li>
-          <li class="item">选项8</li>
-          <li class="item">选项9</li>
-				</ul>
+			<div class="btn-chat">立即沟通</div>
+		</div>
+	</a>
+	<a href="#" class="title-conten">
+		<div class="title">
+			<span class="title-text">【首月1w】+无责底薪4700+高提成线上销售</span>
+			<span class="salary">8-13K</span>
+		</div>
+		<div class="name">
+			<span class="company">中安建培</span>
+			<span class="workplace">郑州</span>
+		</div>
+		<div class="labels">
+			<span>经验不限</span>
+			<span>高中</span>
+			<span>无经验要求</span>
+			<span>电话销售经验</span>
+			<span>网络销售经验</span>
+		</div>
+		<div class="recruiter">
+			<div class="user-wrap">
+				<img src="https://img.bosszhipin.com/beijin/upload/avatar/20230515/607f1f3d68754fd06c74079dd7291a4dee04f308fcaf1b4afe52c3d2f99e7452479317c205293085_s.jpg?x-oss-process=image/resize,w_100,limit_0" alt="">
+				<div class="name-buttom">郭女士·人事经理</div>
 			</div>
-		</main>
-	</body>
+			<div class="btn-chat">立即沟通</div>
+		</div>
+	</a>
+	<a href="#" class="title-conten">
+		<div class="title">
+			<span class="title-text">【首月1w】+无责底薪4700+高提成线上销售</span>
+			<span class="salary">8-13K</span>
+		</div>
+		<div class="name">
+			<span class="company">中安建培</span>
+			<span class="workplace">郑州</span>
+		</div>
+		<div class="labels">
+			<span>经验不限</span>
+			<span>高中</span>
+			<span>无经验要求</span>
+			<span>电话销售经验</span>
+			<span>网络销售经验</span>
+		</div>
+		<div class="recruiter">
+			<div class="user-wrap">
+				<img src="https://img.bosszhipin.com/beijin/upload/avatar/20230515/607f1f3d68754fd06c74079dd7291a4dee04f308fcaf1b4afe52c3d2f99e7452479317c205293085_s.jpg?x-oss-process=image/resize,w_100,limit_0" alt="">
+				<div class="name-buttom">郭女士·人事经理</div>
+			</div>
+			<div class="btn-chat">立即沟通</div>
+		</div>
+	</a>
+	<a href="#" class="title-conten">
+		<div class="title">
+			<span class="title-text">【首月1w】+无责底薪4700+高提成线上销售</span>
+			<span class="salary">8-13K</span>
+		</div>
+		<div class="name">
+			<span class="company">中安建培</span>
+			<span class="workplace">郑州</span>
+		</div>
+		<div class="labels">
+			<span>经验不限</span>
+			<span>高中</span>
+			<span>无经验要求</span>
+			<span>电话销售经验</span>
+			<span>网络销售经验</span>
+		</div>
+		<div class="recruiter">
+			<div class="user-wrap">
+				<img src="https://img.bosszhipin.com/beijin/upload/avatar/20230515/607f1f3d68754fd06c74079dd7291a4dee04f308fcaf1b4afe52c3d2f99e7452479317c205293085_s.jpg?x-oss-process=image/resize,w_100,limit_0" alt="">
+				<div class="name-buttom">郭女士·人事经理</div>
+			</div>
+			<div class="btn-chat">立即沟通</div>
+		</div>
+	</a>
+	
+</div>
+		</div>
+	</main>
+</body>
+
 </html>
